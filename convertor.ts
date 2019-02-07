@@ -18,7 +18,7 @@ const sagaWrapper = (
     }
   }
 
-export function getSagas(
+export function generateSagas(
   sagaModels: any[],
   errorHandler?: (error: any) => void
 ): SagaIterator[] {
@@ -65,13 +65,13 @@ export function getSagas(
   return sagas
 }
 
-export function getReducers(reducerModels: object): object {
+export function generateReducers(reducerModels: object): object {
   const _actionTypeCache: string[] = []
   const _modelNameCache: string[] = []
   const reducers: any = {}
   for (const reducerKey in reducerModels) {
     const reducerModel = (reducerModels as any)[reducerKey]
-    reducers[reducerKey] = getReducer(
+    reducers[reducerKey] = generateReducer(
       reducerModel,
       _modelNameCache,
       _actionTypeCache
@@ -80,7 +80,7 @@ export function getReducers(reducerModels: object): object {
   return reducers
 }
 
-export function getReducer(
+export function generateReducer(
   reducerModel: any,
   _modelNameCache?: string[],
   _actionTypeCache?: string[]
