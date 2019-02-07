@@ -7,10 +7,10 @@ import {
   getReducer0,
   getReducer,
   getActionType,
-  ActionExtend,
   BaseSaga,
   BaseReducer
 } from './model'
+import { ModelAction0, ModelAction } from './type'
 
 export {
   generateSagas,
@@ -22,7 +22,8 @@ export {
   getGenerator,
   getReducer0,
   getReducer,
-  ActionExtend,
   BaseSaga,
-  BaseReducer
+  BaseReducer,
+  ModelAction0,
+  ModelAction
 }

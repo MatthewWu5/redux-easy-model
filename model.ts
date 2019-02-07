@@ -2,6 +2,7 @@ import { createAction as _createAction_by_redux_actions } from 'redux-actions'
 import { ActionFunction0, ActionFunction1 } from 'redux-actions'
 import { takeLatest, takeEvery } from 'redux-saga/effects'
 import { SagaIterator } from 'redux-saga'
+import { ModelAction0, ModelAction } from './type'
 
 const _getActionType = (modelName: string, generatorName: string): string => {
   return modelName + '.' + generatorName

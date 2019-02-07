@@ -2,6 +2,7 @@ import { all, call } from 'redux-saga/effects'
 import { handleActions } from 'redux-actions'
 import { ActionExtend } from './model'
 import { SagaIterator } from 'redux-saga'
+import { ModelAction } from './type'
 
 const sagaWrapper = (
   saga: (action: ModelAction<any>) => void,
