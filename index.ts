@@ -1,3 +1,5 @@
+import createSagaMiddleware from 'redux-saga'
+import * as effects from 'redux-saga/effects'
 import { generateSagas, generateReducer, generateReducers } from './convertor'
 import {
   createAction0,
@@ -13,6 +15,8 @@ import {
 import { ModelAction0, ModelAction } from './type'
 
 export {
+  createSagaMiddleware,
+  effects,
   generateSagas,
   generateReducer,
   generateReducers,

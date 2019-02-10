@@ -1,6 +1,6 @@
 {
   "name": "redux-easy-model",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,11 @@
   },
   "keywords": [
     "redux",
+    "easy-redux",
     "reducer",
     "saga",
-    "easy"
+    "redux-actions",
+    "redux-saga"
   ],
   "author": "Matthew5",
   "license": "ISC",
